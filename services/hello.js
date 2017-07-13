@@ -1,7 +1,7 @@
 'use strict';
 const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
-
+const B64 = require('b64');
 
 exports.handler = (event, ctx, callback) => {
   console.log('invoke helloworld!');
@@ -16,5 +16,5 @@ exports.handler = (event, ctx, callback) => {
     },
     body: buffer
   };
-  callback(null, buffer);
+  callback(null, { content: B64.encode(buffer).toString() });
 };
