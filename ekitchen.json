@@ -1,0 +1,39 @@
+{
+  "appid": "xlsx_demo",
+  "author": "long.zhang@ele.me",
+  "notice": [
+    "long.zhang@ele.me"
+  ],
+  "authUser": [
+    "long.zhang@ele.me"
+  ],
+  "services": [
+    {
+      "serviceName": "xlsx_demo",
+      "funcs": [
+        {
+          "functionName": "ping",
+          "handler": "services/hello.handler"
+        }
+      ]
+    }
+  ],
+  "build": {
+    "commands": [
+      "npm install"
+    ]
+  },
+  "deploy": {
+    "env": {
+      "alpha": {
+        "NODE_ENV": "alpha"
+      },
+      "beta": {
+        "NODE_ENV": "beta"
+      },
+      "production": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}

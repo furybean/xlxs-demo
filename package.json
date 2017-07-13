@@ -1,0 +1,22 @@
+{
+  "name": "fc-helloworld",
+  "version": "1.0.0",
+  "description": "demo of ali-fc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntSworD/fc-helloworld.git"
+  },
+  "author": "junjian.zheng@ele.me",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AntSworD/fc-helloworld/issues"
+  },
+  "homepage": "https://github.com/AntSworD/fc-helloworld#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
