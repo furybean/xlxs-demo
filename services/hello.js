@@ -14,7 +14,6 @@ exports.handler = (event, ctx, callback) => {
   }
   const data = args.data || [];
   const header = args.header || [];
-  // const data = [[1, 2, 3], [true, false, null, 'sheetjs'], ['foo', 'bar', new Date('2014-02-19T14:30Z'), '0.3'], ['baz', null, 'qux']];
-  const buffer = xlsx.build([{ name: "Data", data: header.concat(data) }]);
+  const buffer = xlsx.build([{ name: "Data", data: [header].concat(data) }]);
   callback(null, { content: B64.encode(buffer).toString() });
 };
